@@ -12,12 +12,23 @@ Três agentes, que funcionam em qualquer projeto:
 
 ## Instalação (uma vez, vale para todos os projetos)
 
-```bash
-mkdir -p ~/.claude/agents
-cp agents/*.md ~/.claude/agents/
+Clone o repositório e faça `~/.claude/agents` apontar para a pasta `agents/` daqui. Assim, para atualizar os agentes, basta `git pull`.
+
+Windows (PowerShell como administrador, ou com o Modo de Desenvolvedor ligado):
+
+```powershell
+git clone https://github.com/ithanamaral/agents-dunbreeze "$HOME\agents-dunbreeze"
+New-Item -ItemType SymbolicLink -Path "$HOME\.claude\agents" -Target "$HOME\agents-dunbreeze\agents"
 ```
 
-Arquivos em `~/.claude/agents/` valem para qualquer repositório. Se um projeto precisar de uma versão diferente, coloque a cópia em `<repo>/.claude/agents/`, que tem prioridade.
+macOS e Linux:
+
+```bash
+git clone https://github.com/ithanamaral/agents-dunbreeze ~/agents-dunbreeze
+ln -s ~/agents-dunbreeze/agents ~/.claude/agents
+```
+
+Se já existir uma pasta `~/.claude/agents`, apague ou renomeie antes de criar o link.
 
 Para o scrum master, conecte o MCP do Linear no Claude Code:
 
