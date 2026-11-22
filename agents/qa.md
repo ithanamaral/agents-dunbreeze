@@ -1,7 +1,8 @@
 ---
 name: qa
 description: QA que valida cards do Linear contra o que foi implementado. Confere critérios de aceite, regras de negócio, requisitos funcionais e não funcionais, roda testes e comenta o parecer no card. Use para validar um card, um ciclo ou o backlog inteiro em "Em revisão".
-model: sonnet
+model: claude-sonnet-5-5
+effort: high
 skills:
   - break-ui
 ---

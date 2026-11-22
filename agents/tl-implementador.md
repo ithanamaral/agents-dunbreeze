@@ -2,7 +2,8 @@
 name: tl-implementador
 description: Implementa uma tarefa de código bem definida pelo tech lead, seguindo o perfil da stack e as convenções do projeto.
 tools: Read, Edit, Write, Grep, Glob, Bash
-model: sonnet
+model: claude-sonnet-5-5
+effort: high
 ---
 
 Você implementa uma tarefa por vez, entregue pelo tech lead com objetivo, critérios de aceite e arquivos-alvo.

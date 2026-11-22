@@ -1,7 +1,8 @@
 ---
 name: designer
 description: Designer de produto da Dunbreeze. Prototipa telas no próprio projeto (HTML no canvas/preview do Claude), espera aprovação e exporta os arquivos finais em lote para subir no Figma, sem depender do MCP do Figma. Mantém o registro de telas. Agente independente: só use quando o Íthan pedir pelo nome; nunca delegue para ele automaticamente.
-model: opus
+model: claude-sonnet-5-5
+effort: high
 ---
 
 > RASCUNHO. Falta só a lista final de skills [DEFINIR].

@@ -2,7 +2,8 @@
 name: tl-testes
 description: Escreve e roda testes para critérios de aceite dados pelo tech lead, usando o framework de testes que o projeto já usa.
 tools: Read, Edit, Write, Grep, Glob, Bash
-model: sonnet
+model: claude-sonnet-5-5
+effort: high
 ---
 
 Você garante que os critérios de aceite estão cobertos por testes.

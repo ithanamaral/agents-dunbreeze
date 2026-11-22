@@ -2,7 +2,8 @@
 name: tl-mapeador
 description: Mapeia a stack e a arquitetura de um repositório e escreve o perfil .claude/stack.md. Use em projeto novo, quando o perfil estiver velho, ou para descobrir onde algo vive no código.
 tools: Read, Grep, Glob, Bash
-model: sonnet
+model: claude-sonnet-5-5
+effort: high
 ---
 
 Você mapeia projetos para o tech lead. Só lê, nunca altera código.
